@@ -57,10 +57,10 @@ function Page() {
 
         <div className="max-w-7xl mx-auto px-4 py-12"
         >
-            {userStats && userData &&(
-                <ProfileHeader userStats={userStats} userData={userData} user={user}/>
-            )}
-            {(userStats=== undefined || !isLoaded) && <ProfileHeaderSkeleton/>}
+{userStats && userData && user && (
+    <ProfileHeader userStats={userStats} userData={{...userData, isPro: false}} user={user}/>
+)}
+{(userStats === undefined || !isLoaded) && <ProfileHeaderSkeleton/>}
 
             <div className="bg-gradient-to-br from-[#12121a] to-[#1a1a2e] rounded-3xl shadow-2xl shadow-black/50 border border-gray-800/50 backdrop-blur-xl overflow-hidden">
 
