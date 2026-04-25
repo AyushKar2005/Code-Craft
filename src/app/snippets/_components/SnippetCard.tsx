@@ -1,4 +1,5 @@
 "use client"
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
 import { Snippet } from "@/types"
 import { useUser } from "@clerk/nextjs"
@@ -7,7 +8,7 @@ import { api } from "../../../../convex/_generated/api"
 import { useState } from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
-import { Clock,  StarIcon, Trash2, User } from "lucide-react"
+import { Clock, Trash2, User } from "lucide-react"
 import Image from "next/image"
 import toast from "react-hot-toast"
 import StarButton from "@/components/StarButton"

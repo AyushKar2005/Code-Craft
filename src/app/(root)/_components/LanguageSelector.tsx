@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 import { useCodeEditorStore } from "@/store/useCodeEditorStore";
 import { useEffect, useRef, useState } from "react";
 import { LANGUAGE_CONFIG } from "../_constants";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { ChevronDownIcon, Lock, Sparkles } from "lucide-react";
+import { ChevronDownIcon, Sparkles } from "lucide-react";
 import useMounted from "@/hooks/useMounted";
 
 function LanguageSelector({ hasAccess }: { hasAccess: boolean }) {
