@@ -4,6 +4,7 @@
 import { create } from 'zustand';
 import type { editor } from 'monaco-editor';
 import { LANGUAGE_CONFIG } from '@/app/(root)/_constants';
+import { ExecutionResult } from '@/types';
 
 interface CodeEditorState {
   language: string;
@@ -13,7 +14,7 @@ interface CodeEditorState {
   isRunning: boolean;
   editor: editor.IStandaloneCodeEditor | null;
   error: string | null;
-  executionResult: any;
+  executionResult: ExecutionResult | null;
   stdin: string;
 
   getValue: () => string;
